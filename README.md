@@ -232,18 +232,21 @@ client.close()
 - Verify common ground
 - Ensure correct COM port
 - Check baud rate settings
+  
 **2. Port Access Denied**
 - Close other serial applications (Arduino IDE, etc.)
 - Check permissions (Linux/macOS: add user to dialout group)
+  
 **3. WiFi Connection Fails**
 - Device automatically switches to AP mode
 - Connect to 'ESP32-Actuator' or 'ESP32-Weather' SSID
 - Access web interface at '192.168.4.1'
+  
 **4. Negative Temperature Readings**
 - Values are stored as signed int16 (two's complement)
 - Master device must cast uint16 back to int16
 
-##Applications
+## Applications
 - Industrial Automation: Control actuators in manufacturing processes
 - Environmental Monitoring: Real-time weather data collection
 - Remote Control: Web-based actuator control from anywhere
